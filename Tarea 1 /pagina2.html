@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .collapsible {
+          background-color: rgb(104, 133, 238);
+          color: white;
+          cursor: pointer;
+          padding: 18px;
+          width: 10%;
+          
+          border: none;
+          text-align: center;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        
+        .content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        }
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+  <title>Pagina 2</title>
+	<meta charset="utf-8">
+	<meta name="author" content="app web">
+	<meta name="keywords" content="html programacion web"
+	<meta name="aplication-name" content="Web-Udea">
+	<meta http-equiv="refresh" content="60">
+<body bgcolor="#E6E6FA">
+    <h1 style="text-align: center">Recetas de cocina para ti</h1>
+        <section>
+            <div id="primer_parrafo" class="container" style="font-size: 180%">
+
+                <div>
+                    <div >
+                        <div >
+                          <p>Pagina creada con el fin de almacenar recetas de cocina con videos
+                            de chefs profesionales, ingredientes y tips de cocina en adicion puedes registrarte y 
+                            subir tus videos para almacenarlos.
+                          </p>
+                          <h3>Grupo de trabajo</h1>
+                            <ul>
+                              <li>
+                                  Nestor Calvo Ariza nestor.calvo@udea.edu.co
+                              </li>
+                              <li>
+                                  Ana Victoria Reyes victoria.reyes@udea.edu.co
+                              </li>
+                            </ul>
+                          </h3>
+                        	<p style="text-align: justify;">A continuación encontrará unos videos realizados por diferentes chefs de clase mundial donde podras aprender
+diferentes recetas.</p>
+<p>Los videos estan organizados en base a su dificultad. <p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+<div style="text-align: center">
+    <button type="button" class="collapsible">Huevo Cocido</button>
+    <div class="content" >
+    	<p>Aqui va un video</p>
+    </div> 
+
+    <button type="button" class="collapsible">Chocolate Chip Cookies</button>
+    <div class="content">
+    	<p>Aqui va un video</p>
+    </div>             
+
+    <button type="button" class="collapsible">Brownies</button>
+    <div class="content">
+    	<p>Aqui va un video</p>
+    </div>             
+
+    <button type="button" class="collapsible">Pizza</button>
+    <div class="content">
+    <p>Aqui va un video</p>
+    </div>             
+
+    <button type="button" class="collapsible">Ratatouille</button>
+    <div class="content">
+    <p>Aqui va un video</p>
+    </div>     
+    <form action="pagina2.html">
+      <button type="submit" id="backbtn" style="font-size: 150%;">Volver</button>
+    </form>
+    
+</div>
+<div>
+	<h2>Deseas eliminar algún video?(Debes ser administrador para eliminarlo)</h2>
+
+	<button onclick="noAdmin()">Haz click para eliminar el video 1</button>
+</div>
+
+
+
+<!-- Script para realizar un acordeon -->
+<script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+	function noAdmin() {
+ 		 alert("No eres un administrador");
+	}
+
+        </script>
+
+</body>
+</html>
