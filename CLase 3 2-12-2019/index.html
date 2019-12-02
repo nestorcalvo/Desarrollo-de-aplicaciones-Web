@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="author" content="app web">
+    <meta name="keywords" content="html programacion web"
+    <meta name="aplication-name" content="Web-Udea">
+    <meta http-equiv="refresh" content="60">
+    
+</head>
+<body>
+    <h1>Form</h1>
+    <!--form action="pagina.php" method="GET" name="form_login" target="_blank">
+        <input type="" name="usuario">
+        <input type="submit" name="login">
+    </form>-->
+    <form action="pagina.php" name="form_registro" method="GET" target="_blank">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="">Nombre: </label><input type="" name="usuario" size="20" maxlength="5" required><br>
+            <label for="">Password: </label><input type="password" name="contraseña" required><br>
+            <label for="correo">Correo: </label><input type="email" name="correo" placeholder="user@correo.com"><br>
+            <label for="cedula">Cedula: </label><input type="text" name="cc" pattern="[0-9]{5}"><br>
+            <input type="submit" name="registro"> <br><br>
+        </fieldset>
+        
+        <label for="seleccion">Departamentos:</label> <br>
+        <input type="checkbox" name="dep" value="510">Electronica <br>
+        <input type="checkbox" name="dep" value="535">Telecomunicaciones <br>
+        <input type="checkbox" name="dep" value="511">Electrica <br>
+        <input type="submit" name="registro" id="" value="Enviar"><br>
+
+        <label for="materias">Materaias</label><br>
+        <input type="radio" name="mat" id="" value="2710200">Calculo I <br>
+        <input type="radio" name="mat" id="" value="2757100">Calculo II <br>
+        <input type="radio" name="mat" id="" value="2815421">Calculo III <br>
+
+        <label for="paises">Paises</label>
+        <input type="text" name="paises" lista="lista1">
+        <datalist id="lista1">
+            <option value="col">Colombia</option>
+            <option value="par">Paraguay</option>
+            <option value="ven">Venezuela</option>
+        </datalist><br>
+
+        <label for="paises2">Otra lista</label><br>
+        <select id="lista2">
+            <optgroup label="Grupo A">
+                <option value="col">Colombia</option>
+                <option value="par">Paraguay</option>
+                <option value="ven">Venezuela</option>
+            </optgroup>
+            <optgroup label="Grupo B">
+                <option value="col">Colombia</option>
+                <option value="par">Paraguay</option>
+                <option value="ven">Venezuela</option>
+            </optgroup>
+        </select><br>
+        <textarea name="Comentarios" id="" cols="30" rows="10"></textarea><br><br>
+        <label for="Avatar">Avatar</label><input type="file" name="Foto" id="foto" accept="image/*"><br>
+        
+        <input type="reset" name="clear" value="Limpiar Formulario">
+    </form>
+</body>
+</html>
