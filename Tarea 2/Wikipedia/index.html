@@ -9,32 +9,49 @@
     <meta name="aplication-name" content="Web-Udea">
     <meta http-equiv="refresh" content="60">
     <style>
-    ol {
-        counter-reset: item
-      }
-      li {
-        display: block
-      }
-      li:before {
-        content: counters(item, ".") " ";
-        counter-increment: item
-      }
+   ol {
+    counter-reset: item;
+    }
+
+    ol > li {
+        counter-increment: item;
+    }
+
+    ol ol > li {
+        display: block;
+    }
+
+    ol ol > li:before {
+        content: counters(item, ".") ". ";
+        margin-left: -20px;
+    }
     a{
         text-decoration: none
     }
     body{
-        margin-left: 15%
-        
-        
+        margin-left: 15% 
     }
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
     </style>
 </head>
 <body>
-<h1><i>Binging with Babish</i></h1>
-<hr>
-<p>From Wikipedia, the free encyclopedia</p>
-<p><b><i>Binging with Babish</i></b> is a <a href="https://en.wikipedia.org/wiki/YouTube" target="_blank">YouTube</a> cooking channel created by American filmmaker <b>Andrew Rea</b> (born September 2, 1987) which recreates recipes featured in film, television, and video games. The show premiered on February 10, 2016, and the channel currently has over 5 million subscribers. </p>
-<div>
+    <div id="start">
+        <h1><i>Binging with Babish</i></h1>
+        <hr>
+        <p>From Wikipedia, the free encyclopedia</p>
+        <p><b><i>Binging with Babish</i></b> is a <a href="https://en.wikipedia.org/wiki/YouTube" target="_blank">YouTube</a> cooking channel created by American filmmaker <b>Andrew Rea</b> (born September 2, 1987) which recreates recipes featured in film, television, and video games. The show premiered on February 10, 2016, and the channel currently has over 5 million subscribers. </p>
+
+    </div>
+    <div id="table_of_content">
     <h4>Contents</h4>
     <ol>
         <li>
@@ -67,8 +84,8 @@
             <a href="#ref">References</a>
         </li>
     </ol>
-</div>
-<div id="history">
+    </div>
+    <div id="history">
     <h2><i>History</i></h2>
     <hr>
     <p>
@@ -140,193 +157,252 @@
         <a href="https://en.wikipedia.org/wiki/Onigiri" target="_blank">onigiri</a>.<sup><a href="#r11">[11]</a></sup>
     </p>
 
-</div>
-<div id="format">
-    <h2><i>Format</i></h2>
-    <hr>
-    <p>
-        During each episode, Rea prepares step-by-step instructions on the preparation of film and television-related meals.
-        <sup><a href="#r4">[4]</a></sup>  The show is typically filmed at his torso, 
-        in the kitchen of his New York City apartment with a voice-over added in <a href="https://en.wikipedia.org/wiki/Post-production" target="_blank">post-production</a>. 
-        Each episode contains <a href="https://en.wikipedia.org/wiki/Dry_humor" target="_blank">dry humor</a><sup><a href="#r12">[12]</a></sup>  and is paced at a fast speed. After creating the dish as it originally appeared, some episodes includes Rea's interpretation of the recipe.<sup><a href="#r5">[5]</a></sup> 
-    </p>
-</div>
-<div id="biography">
-    <h2><i>Biography</i></h2>
-    <hr>
-    <p>
-        <b>Andrew Douglas Rea</b> (born September 2, 1987)
-        was born in <a href="https://en.wikipedia.org/wiki/Mendon,_New_York" target="_blank">Mendon, New York</a> and 
-        raised in <a href="https://en.wikipedia.org/wiki/Rochester,_New_York" target="_blank">Rochester</a>, to parents 
-        Annie and Douglas Rea. He has an older brother, David. His nephew, Christopher, 
-        made an appearance in one of his videos portraying a younger version of himself. 
-        He is of Polish, Italian and Welsh descent. Rea was taught to cook at a young age 
-        by his mother, who died when he was 11. 
-        In 2009, Rea graduated with a <a href="https://en.wikipedia.org/wiki/Bachelor_of_Arts" target="_blank">BA</a> 
-        in <a href="https://en.wikipedia.org/wiki/Film_Studies" target="_blank">Film Studies</a> 
-        from <a href="https://en.wikipedia.org/wiki/Hofstra_University" target="_blank">Hofstra University</a> <sup><a href="#r24">[24]</a></sup> and later worked as a <a href= "https://en.wikipedia.org/wiki/Visual_effects" target="_blank">visual effects</a> artist for SwitchFX Inc.<sup><a href="#r5">[5]</a></sup><sup><a href="#r25">[25]</a></sup> 
-    </p>
-</div>
-<div id="episodes">
-    <h2><i>Episodes</i></h2>
-    <hr>
-    <i><p>Main article: <a href="https://en.wikipedia.org/wiki/List_of_Binging_with_Babish_episodes" target="_blank">List of Binging with Babish episodes</a></p></i>
-    <div id="main_series">
-        <h3><i>Main Series</i></h3>
-        <table border="1" style="text-align: center">
-            <tr>
-                <td rowspan="2">
-                    <b>Season</b>
-                </td>
-                <td rowspan="2">
-                    <b>Episode</b>
-                </td>
-                <td colspan="2">
-                    <b>Originaly aired</b>
-                </td>
-            </tr>
-            <tr>
-                <td><b>First Aired</b></td>
-                <td><b>Last Aired</b></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>82</td>
-                <td>February 12, 2016</td>
-                <td>May 15, 2018</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>78</td>
-                <td>May 22, 2018</td>
-                <td>Present</td>
-            </tr>
-        </table>
     </div>
-    <div id="spin_off">
-        <h3><i>Spin-Offs</i></h3>
-        <table border="1" style="text-align: center">
-            <tr>
-                <td colspan="3">
-                    <b>Series</b>
-                </td>
-                <td rowspan="2">
-                    <b>Start Date</b>
-                </td>
-                <td rowspan="2">
-                    <b>End Date</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Name</b>
-                </td>
-                <td>
-                    <b>Seasons</b>
-                </td>
-                <td>
-                    <b>Episodes</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <i><h5>Basics with Babish</h5></i>
-                </td>
-                <td>
-                    2
-                </td>
-                <td>
-                    55
-                </td>
-                <td>
-                    <p>
-                        October 12, 2017
-                    </p>
-                </td>
-                <td rowspan="2">
-                    Present
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <i><h5>Being with Babish</h5></i>
-                </td>
-                <td>
-                    1
-                </td>
-                <td>
-                    6
-                </td>
-                <td>
-                    <p>
-                        March 22, 2019 
-                    </p>
-                </td>
+    <div id="format">
+        <h2><i>Format</i></h2>
+        <hr>
+        <p>
+            During each episode, Rea prepares step-by-step instructions on the preparation of film and television-related meals.
+            <sup><a href="#r4">[4]</a></sup>  The show is typically filmed at his torso, 
+            in the kitchen of his New York City apartment with a voice-over added in <a href="https://en.wikipedia.org/wiki/Post-production" target="_blank">post-production</a>. 
+            Each episode contains <a href="https://en.wikipedia.org/wiki/Dry_humor" target="_blank">dry humor</a><sup><a href="#r12">[12]</a></sup>  and is paced at a fast speed. After creating the dish as it originally appeared, some episodes includes Rea's interpretation of the recipe.<sup><a href="#r5">[5]</a></sup> 
+        </p>
+        <p>
+            The show has featured many guest appearances from other YouTube 
+            creators who cook alongside Rea, such as Cocktail Chemistry's Nick Fisher,<sup><a href="#r13">[13]</a></sup> 
+            Ashwin Ramdas from Ashwin Enjoys Nature,<sup><a href="#r14">[14]</a></sup> 
+            You Suck At Cooking,<sup><a href="#r15">[15]</a></sup> 
+            <a href="https://en.wikipedia.org/wiki/Brad_Leone" target="_blank">Brad Leone</a>  from 
+            <a href="https://en.wikipedia.org/wiki/Bon_App%C3%A9tit" target="_blank">Bon Appétit </a> 
+            (star of <i><a href="https://en.wikipedia.org/wiki/Bon_App%C3%A9tit#Bon_App%C3%A9tit_YouTube_Channel" target="_blank">It's Alive with Brad</a></i>),<sup><a href="#r16" target="_blank">[16]</a></sup>  
+            and <a href="https://en.wikipedia.org/wiki/First_We_Feast" target="_blank">First We Feast</a>'s <a href="https://en.wikipedia.org/wiki/Sean_Evans_(interviewer)" target="_blank">Sean Evans</a>. <sup><a href="#r17">[17]</a></sup>
+            Rea has also appeared as a guest star on 
+            Evans's series <a href="https://en.wikipedia.org/wiki/Hot_Ones" target="_blank"><i>Hot Ones</i></a>.
+            <sup><a href="#r18">[18]</a></sup> Rea's 4 million 
+            subscribers video featured a special guest appearance 
+            by <a href="https://en.wikipedia.org/wiki/Iron_Chef" target="_blank">Iron Chef</a>
+            <a href="https://en.wikipedia.org/wiki/Masaharu_Morimoto" target="_blank">Masaharu Morimoto</a>, who assisted 
+            Rea in creating the Death Sandwich from <i><a href="https://en.wikipedia.org/wiki/Regular_Show" target="_blank">Regular Show</a></i>  
+            (achieved by adding <a href="https://en.wikipedia.org/wiki/Fugu" target="_blank">fugu</a>). <sup><a href="#r19">[19]</a></sup>
+        </p>
+        <p>
+            On some occasions, Rea has hosted actors from the shows 
+            and films the recipes are sourced from. 
+            As part of production on their cooking series 
+            <i><a href="https://en.wikipedia.org/wiki/The_Chef_Show" target="_blank">The Chef Show</a></i> 
+            (on which Rea appears in multiple episodes), filmmaker/actor 
+            <a href="https://en.wikipedia.org/wiki/Jon_Favreau" target="_blank">Jon Favreau</a> and 
+            chef <a href="https://en.wikipedia.org/wiki/Roy_Choi" target="_blank">Roy Choi </a>
+            appeared in an episode to make chocolate lava cakes from 
+            Favreau's film <i><a href="https://en.wikipedia.org/wiki/Chef_(2014_film)" target="_blank"> Chef</a></i>, one of Rea's favorite 
+            films which he has featured numerous times on the show. 
+            Favreau ended the episode by presenting Rea with 
+            the carving fork prop used in a prominent scene 
+            from the film. <sup><a href="#r20">[20]</a></sup> <a href="https://en.wikipedia.org/wiki/Maisie_Williams" target="_blank">Maisie Williams</a> 
+            of <i><a href="https://en.wikipedia.org/wiki/Game_of_Thrones" target="_blank">Game of Thrones</a></i> fame appeared in an 
+            episode where she and Rea attempted to 
+            recreate Direwolf Bread. <sup><a href="#r21">[21]</a></sup>
+            Williams, a fan of Binging with Babish, 
+            arranged her guest appearance after 
+            messaging multiple YouTube food channels 
+            (including Bon Appétit) about appearing on one of their shows while 
+            she was in New York. <sup><a href="#r22">[22]</a></sup>
+        </p>
+    </div>
+    <div id="biography">
+        <h2><i>Biography</i></h2>
+        <hr>
+        <p>
+            <b>Andrew Douglas Rea</b> (born September 2, 1987)
+            was born in <a href="https://en.wikipedia.org/wiki/Mendon,_New_York" target="_blank">Mendon, New York</a> and 
+            raised in <a href="https://en.wikipedia.org/wiki/Rochester,_New_York" target="_blank">Rochester</a>, to parents 
+            Annie and Douglas Rea. He has an older brother, David. His nephew, Christopher, 
+            made an appearance in one of his videos portraying a younger version of himself. 
+            He is of Polish, Italian and Welsh descent. Rea was taught to cook at a young age 
+            by his mother, who died when he was 11. 
+            In 2009, Rea graduated with a <a href="https://en.wikipedia.org/wiki/Bachelor_of_Arts" target="_blank">BA</a> 
+            in <a href="https://en.wikipedia.org/wiki/Film_Studies" target="_blank">Film Studies</a> 
+            from <a href="https://en.wikipedia.org/wiki/Hofstra_University" target="_blank">Hofstra University</a> <sup><a href="#r24">[24]</a></sup> and later worked as a <a href= "https://en.wikipedia.org/wiki/Visual_effects" target="_blank">visual effects</a> artist for SwitchFX Inc.<sup><a href="#r5">[5]</a></sup><sup><a href="#r25">[25]</a></sup> 
+        </p>
+    </div>
+    <div id="episodes">
+        <h2><i>Episodes</i></h2>
+        <hr>
+        <i><p>Main article: <a href="https://en.wikipedia.org/wiki/List_of_Binging_with_Babish_episodes" target="_blank">List of Binging with Babish episodes</a></p></i>
+        <div id="main_series">
+            <h3><i>Main Series</i></h3>
+            <table border="1" style="text-align: center">
+                <tr>
+                    <td rowspan="2">
+                        <b>Season</b>
+                    </td>
+                    <td rowspan="2">
+                        <b>Episode</b>
+                    </td>
+                    <td colspan="2">
+                        <b>Originaly aired</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>First Aired</b></td>
+                    <td><b>Last Aired</b></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>82</td>
+                    <td>February 12, 2016</td>
+                    <td>May 15, 2018</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>78</td>
+                    <td>May 22, 2018</td>
+                    <td>Present</td>
+                </tr>
+            </table>
+        </div>
+        <div id="spin_off">
+            <h3><i>Spin-Offs</i></h3>
+            <table border="1" style="text-align: center">
+                <tr>
+                    <td colspan="3">
+                        <b>Series</b>
+                    </td>
+                    <td rowspan="2">
+                        <b>Start Date</b>
+                    </td>
+                    <td rowspan="2">
+                        <b>End Date</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Name</b>
+                    </td>
+                    <td>
+                        <b>Seasons</b>
+                    </td>
+                    <td>
+                        <b>Episodes</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i><h5>Basics with Babish</h5></i>
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        55
+                    </td>
+                    <td>
+                        <p>
+                            October 12, 2017
+                        </p>
+                    </td>
+                    <td rowspan="2">
+                        Present
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i><h5>Being with Babish</h5></i>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        <p>
+                            March 22, 2019 
+                        </p>
+                    </td>
 
-            </tr>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    <div id="awards">
+        <h2><i>Awards and nominations</i></h2>
+        <hr>
+        
+        <table border="1" style="text-align: center">
+            <thead>
+                <th>Year</th>
+                <th>Title</th>
+                <th>Award</th>
+                <th>Result</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">2017</td>
+                    <td rowspan="2"><a href="https://en.wikipedia.org/wiki/7th_Streamy_Awards" target="_blank">7th Streamy Awards</a></td>
+                    <td>Food</td>
+                    <td>Nominated</td>
+                </tr>
+                <tr>
+                    <td>Breakout Creator</td>
+                    <td>Nominated</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td><a href="https://en.wikipedia.org/wiki/10th_Shorty_Awards" target="_blank">10th Shorty Awards</a></td>
+                    <td>Best in Food</td>
+                    <td>Nominated</td>
+                </tr>
+            </tbody>
         </table>
     </div>
-    
-</div>
-<div id="awards">
-    <h2><i>Award and nominations</i></h2>
-    <hr>
-    
-    <table border="1" style="text-align: center">
-        <thead>
-            <th>Year</th>
-            <th>Title</th>
-            <th>Award</th>
-            <th>Result</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2">2017</td>
-                <td rowspan="2"><a href="https://en.wikipedia.org/wiki/7th_Streamy_Awards" target="_blank">7th Streamy Awards</a></td>
-                <td>Food</td>
-                <td>Nominated</td>
-            </tr>
-            <tr>
-                <td>Breakout Creator</td>
-                <td>Nominated</td>
-            </tr>
-            <tr>
-                <td>2018</td>
-                <td><a href="https://en.wikipedia.org/wiki/10th_Shorty_Awards" target="_blank">10th Shorty Awards</a></td>
-                <td>Best in Food</td>
-                <td>Nominated</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div id="see_also">
-    <h2><i>See also</i></h2>
-    <hr>
-    <ul>
-        <li> <a href="https://en.wikipedia.org/wiki/List_of_YouTubers" target="_blank">List of Youtubers</a></li>
-    </ul>
-</div>
-<div id="ref">
+    <div id="see_also">
+        <h2><i>See also</i></h2>
+        <hr>
+        <ul>
+            <li> <a href="https://en.wikipedia.org/wiki/List_of_YouTubers" target="_blank">List of Youtubers</a></li>
+        </ul>
+    </div>
+    <div id="ref">
         <h2><i>References</i></h2>
         <hr>
-        <ol>
-            <li id="r1"> <a href="https://www.youtube.com/user/bgfilms/about" target="_blank">"Binging with Babish - About".</a> YouTube. Retrieved December 1, 2017.</li>
-            <li id="r2"> <a href="https://www.eater.com/2017/5/5/15537754/binging-with-babish-youtube-series" target="_blank">Fuhrmeister, Chris (May 5, 2017). "'Binging With Babish' Turns Dishes From TV Shows Into Real Food". </a> Eater.com. Retrieved December 1, 2017.</li>
-            <li id="r3"> <a href="https://www.youtube.com/user/bgfilms/videos?&sort=da" target="_blank">
-                "Binging with Babish - Videos".</a> YouTube. Retrieved December 1, 2017.</li>
-            <li id="r4"> <a href="https://www.washingtonpost.com/news/innovations/wp/2017/08/04/one-recipe-at-a-time-youtubes-binging-with-babish-is-disrupting-the-content-industry/" target="_blank">Downes, Larry (August 4, 2017). "One recipe at a time, YouTube's 'Binging With Babish' is disrupting the content industry".</a> The Washington Post. Retrieved December 1, 2017.</li>
-            <li id="r5">Shaffer, Claire (June 21, 2017). <a href="http://www.newsweek.com/binging-babish-cooking-show-food-tv-movies-youtube-628020" target="_blank">""Binging with Babish" Faithfully Recreates TV and Film Recipes for an Online Audience".</a>  Newsweek. Retrieved December 1, 2017.</li>
-            <li id="r6">Bonem, Mark (August 16, 2017). <a href="http://www.foodandwine.com/lifestyle/books/binging-babish-new-cookbook-eat-what-you-watch" target="_blank">"How the Star of Binging with Babish Went from YouTube Star to Cookbook Author".</a> Food & Wine. Retrieved December 1, 2017.</li>
-            <li id="r7">Gutelle, Sam (October 3, 2017). <a href="http://www.tubefilter.com/2017/10/03/binging-with-babish-eat-what-you-watch-cookbook/" target="_blank">"Binging With Babish's 'Eat What You Watch' Becomes Amazon's Second Best-Selling Cookbook On Its Release Day".</a>  Tubefilter. Retrieved December 1, 2017.</li>
-            <li id="r8"><a href="https://www.youtube.com/watch?v=Y9l8iu5J6rs" target="_blank">"The Cake from Portal".</a> Binging with Babish. Season 2. Episode 44. March 19, 2018. YouTube. Retrieved March 19, 2019.</li>
-            <li id="r9"><a href="https://www.youtube.com/watch?v=YUDogDKMJbE" target="_blank">"Giving Back to a Fan in Need".</a> Being with Babish. Season 1. Episode 1. March 22, 2018. YouTube. Retrieved April 5, 2019.</li>
-            <li id="r10"><a href="https://www.youtube.com/watch?v=RentKWlhUXc" target="_blank">"Binging with Babish: Brock's Donuts from Pokémon".</a> Binging with Babish. Season 1. Episode 83. April 1, 2019. YouTube. Retrieved April 1, 2019.</li>
-            <li id="r11"><a href="https://www.youtube.com/watch?v=gW4PCfLzTYA" target="_blank">"Binging with Babish: Brock's Onigiri from Pokémon".</a></li>
-            <li id="r12"> Feldman, Jamie (November 15, 2016).<a href="https://www.huffingtonpost.com/entry/thanksgiving-sandwich-from-scratch_us_582b1e4ce4b02d21bbca9299" target="_blank">"This Is The Most Beautiful Thanksgiving Sandwich Video You've Ever Seen".</a> HuffPost. Retrieved December 1, 2017.</li>
-            <li id="r13"><a href="https://www.youtube.com/watch?v=nEoSBL25RO4" target="_blank">"Binging with Babish: Twin Peaks Pancakes & Coffee (feat. Cocktail Chemistry)".</a> YouTube. Retrieved May 9, 2018.</li>
-            <li id="r14"><a href="https://www.youtube.com/watch?v=6PTuUMJ2Uh8" target="_blank"> "Binging with Babish: Carol's Beet & Acorn Cookies (feat. Ashwin Enjoys Nature)".</a> YouTube. Retrieved May 9, 2018.</li>
+        <div class="row">
+            <div class="column">
+                <ol>
+                    <li id="r1"> <a href="https://www.youtube.com/user/bgfilms/about" target="_blank">"Binging with Babish - About".</a> YouTube. Retrieved December 1, 2017.</li>
+                    <li id="r2"> <a href="https://www.eater.com/2017/5/5/15537754/binging-with-babish-youtube-series" target="_blank">Fuhrmeister, Chris (May 5, 2017). "'Binging With Babish' Turns Dishes From TV Shows Into Real Food". </a> Eater.com. Retrieved December 1, 2017.</li>
+                    <li id="r3"> <a href="https://www.youtube.com/user/bgfilms/videos?&sort=da" target="_blank">
+                        "Binging with Babish - Videos".</a> YouTube. Retrieved December 1, 2017.</li>
+                    <li id="r4"> <a href="https://www.washingtonpost.com/news/innovations/wp/2017/08/04/one-recipe-at-a-time-youtubes-binging-with-babish-is-disrupting-the-content-industry/" target="_blank">Downes, Larry (August 4, 2017). "One recipe at a time, YouTube's 'Binging With Babish' is disrupting the content industry".</a> The Washington Post. Retrieved December 1, 2017.</li>
+                    <li id="r5">Shaffer, Claire (June 21, 2017). <a href="http://www.newsweek.com/binging-babish-cooking-show-food-tv-movies-youtube-628020" target="_blank">""Binging with Babish" Faithfully Recreates TV and Film Recipes for an Online Audience".</a>  Newsweek. Retrieved December 1, 2017.</li>
+                    <li id="r6">Bonem, Mark (August 16, 2017). <a href="http://www.foodandwine.com/lifestyle/books/binging-babish-new-cookbook-eat-what-you-watch" target="_blank">"How the Star of Binging with Babish Went from YouTube Star to Cookbook Author".</a> Food & Wine. Retrieved December 1, 2017.</li>
+                    <li id="r7">Gutelle, Sam (October 3, 2017). <a href="http://www.tubefilter.com/2017/10/03/binging-with-babish-eat-what-you-watch-cookbook/" target="_blank">"Binging With Babish's 'Eat What You Watch' Becomes Amazon's Second Best-Selling Cookbook On Its Release Day".</a>  Tubefilter. Retrieved December 1, 2017.</li>
+                    <li id="r8"><a href="https://www.youtube.com/watch?v=Y9l8iu5J6rs" target="_blank">"The Cake from Portal".</a> Binging with Babish. Season 2. Episode 44. March 19, 2018. YouTube. Retrieved March 19, 2019.</li>
+                    <li id="r9"><a href="https://www.youtube.com/watch?v=YUDogDKMJbE" target="_blank">"Giving Back to a Fan in Need".</a> Being with Babish. Season 1. Episode 1. March 22, 2018. YouTube. Retrieved April 5, 2019.</li>
+                    <li id="r10"><a href="https://www.youtube.com/watch?v=RentKWlhUXc" target="_blank">"Binging with Babish: Brock's Donuts from Pokémon".</a> Binging with Babish. Season 1. Episode 83. April 1, 2019. YouTube. Retrieved April 1, 2019.</li>
+                    <li id="r11"><a href="https://www.youtube.com/watch?v=gW4PCfLzTYA" target="_blank">"Binging with Babish: Brock's Onigiri from Pokémon".</a></li>
+                    <li id="r12"> Feldman, Jamie (November 15, 2016).<a href="https://www.huffingtonpost.com/entry/thanksgiving-sandwich-from-scratch_us_582b1e4ce4b02d21bbca9299" target="_blank">"This Is The Most Beautiful Thanksgiving Sandwich Video You've Ever Seen".</a> HuffPost. Retrieved December 1, 2017.</li>
+                    <li id="r13"><a href="https://www.youtube.com/watch?v=nEoSBL25RO4" target="_blank">"Binging with Babish: Twin Peaks Pancakes & Coffee (feat. Cocktail Chemistry)".</a> YouTube. Retrieved May 9, 2018.</li>
+                    <li id="r14"><a href="https://www.youtube.com/watch?v=6PTuUMJ2Uh8" target="_blank"> "Binging with Babish: Carol's Beet & Acorn Cookies (feat. Ashwin Enjoys Nature)".</a> YouTube. Retrieved May 9, 2018.</li>
+            </div>
+            <div class="column">
+                <ol start="15" type="1">
+                    <li id="r15"><a href="https://www.youtube.com/watch?v=lnB7svFAZBs" target="_blank">"Binging with Babish: Clay-Roasted Thigh from Hannibal (feat. You Suck at Cooking)"</a>. YouTube. Retrieved May 9, 2018.</li>
+                    <li id="r16"><a href="https://www.youtube.com/watch?v=TkWmK-cplV4" target="_blank">"Binging with Babish: Lasagna from Garfield (feat. It's Alive with Brad)". YouTube.</a></li>
+                    <li id="r17"><a href="https://www.youtube.com/watch?v=2U_0OlCizx0" target="_blank">"Binging with Babish: Arrested Development Special (feat. Sean Evans)".</a> YouTube. Retrieved August 20, 2018.</li>
+                    <li id="r18"><a href="https://www.youtube.com/watch?v=dQ80ui7zur4" target="_blank"> "Binging with Babish Gets a Tattoo While Eating Spicy Wings"</a>. YouTube. July 18, 2019. Retrieved July 20, 2019. </li>
+                    <li id="r19"> Rea, Andrew. <a href="https://www.youtube.com/watch?v=o5XNzsf78KE" target="_blank">"Binging with Babish 4 Million Subscriber Special: Death Sandwich from Regular Show"</a>. YouTube. Retrieved 19 August 2019.</li>
+                    <li id="r20"> <a href="https://www.youtube.com/watch?v=qbMTukAJskQ" target="_blank">"Binging with Babish: Chocolate Lava Cakes from Chef feat. Jon Favreau and Roy Choi"</a>. YouTube. Retrieved May 9, 2018.</li>
+                    <li id="r21">Rea, Andrew. <a href="https://www.youtube.com/watch?v=6nuEgc2RVWo" target="_blank">"Binging with Babish: Direwolf Bread from Game of Thrones (feat. Maisie Williams)"</a>. YouTube. Retrieved October 1, 2018.</li>
+                    <li id="r22"> <a href="https://www.youtube.com/watch?v=bzMMDNiaBo8&t=143s" target="_blank">"Maisie Williams Shivers Uncontrollably While Eating Spicy Wings - Hot Ones"</a>. YouTube. Retrieved 30 November 2019.</li>
+                    <li id="r23"> <a href="https://www.youtube.com/watch?v=bLW-o5UTWKU&t=2791" target="_blank">"Livestream #1 | Basics with Babish"</a>. YouTube. October 27, 2017. Retrieved July 1, 2018. I'm a Virgo, I'm not a Libra. September 2nd.</li>
+                    <li id="r24"><a href="https://naibuzz.com/much-money-binging-babish-makes-youtube-net-worth/" target="_blank">"How Much Money Binging With Babish Makes On YouTube - Net Worth"</a>. Naibuzz. January 18, 2018.</li>
+                    <li id="r25"><a href="https://www.youtube.com/watch?v=wcJS3nQjhqM" target="_blank">"Binging with Babish: Banana Pudding Pizza from Doug"</a>. September 18, 2018 – via YouTube.</li>
+                </ol>
+            </div>
 
-        </ol>
-</div>
+        </div>
+    </div>
 </body>
 </html>
