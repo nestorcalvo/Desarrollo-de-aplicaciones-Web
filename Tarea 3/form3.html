@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Tablas</title>
+    <meta charset="utf-8">
+    <meta name="author" content="app web">
+    <meta name="keywords" content="html programacion web"
+    <meta name="aplication-name" content="Web-Udea">
+    <meta http-equiv="refresh" content="60">
+    
+</head>
+<body>
+    <h2>Rellena tu CV</h2>
+    <form action="/action_page.php" method="GET">
+        <fieldset name="personal_info" >
+            <legend>Datos personales</legend>
+            <label for="state">Provincia</label><br>
+            <input list="provincia" name="provincia">
+            <datalist id="provincia">
+              <option value="Riohacha">
+              <option value="Medellín">
+              <option value="Bogotá">
+              <option value="Cartagena">
+              <option value="Pasto">
+            </datalist>
+            <br>
+            <br>
+            <label for="birthday">Fecha de nacimiento</label><br>
+            <input type="text" name="day" id="day" size="2" pattern="[0-9]{2}">
+            <label for="">de</label>
+            <select id="month">
+                <option value="Enero" selected>Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+            <label for="">de</label>
+            <input type="text" name="year" id="year" size="4" pattern="[0-9]{4}">
+            <br>
+            <br>
+            <label for="interst">Temas de interés</label><br>
+            <select id="interst" size="5">
+                    <option value="1" selected>Administración de bases de datos</option>
+                    <option value="2">Análisis y programación</option>
+                    <option value="3">Arquitectura</option>
+                    <option value="4">Calidad</option>
+                    <option value="5">ERP, CRM, Buisness Intelligence</option>
+                    <option value="6">Deep Learning</option>
+                    <option value="7">Análisis de patrones</option>
+                    <option value="8">PLC</option>
+                    <option value="9">Arduino</option>
+                    <option value="10">Seguirdad informatica</option>
+                    <option value="11">Comunicaciones</option>
+                    <option value="12">Computación cuántica</option>
+                </select>
+        </fieldset>
+    </form>
+</body>
+</html>

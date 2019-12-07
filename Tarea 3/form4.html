@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <meta name="author" content="app web">
+    <meta name="keywords" content="html programacion web"
+    <meta name="aplication-name" content="Web-Udea">
+    <meta http-equiv="refresh" content="60">
+    
+</head>
+<body>
+    <h2>Información sobre el producto</h2>
+    <form action="/action_page.php" method="GET">
+        <fieldset name="basic_info" >
+            <legend>Datos basicos</legend>
+            <label for="name">Nombre</label><br>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="description">Descripción</label><br>
+            <textarea name="description" id="description" cols="55" rows="7"></textarea>
+            <br>
+            <br>
+            <label for="photo">Foto</label>
+            <input type="file" name="photo" id="photo" accept="image/*">
+            <br>
+            <br>
+            <input type="checkbox" name="add" id="add">
+            <label for="add">Añadir contador de visitas</label>
+        </fieldset>
+        <fieldset name="economic_data">
+            <legend>Datos económicos</legend>
+            <label for="price">Precio</label>
+            <input type="text" name="price" id="price" size="5" pattern="[0-9]">
+            <label for="">€</label>
+            &nbsp;
+            &nbsp;
+            <label for="taxes">Inpuestos</label>
+            <select id="discount">
+                <option value="4" selected>4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select>
+            <br>
+            <br>
+            <label for="promo">Promoción</label>
+            <br>
+            <input type="radio" name="promo" id="promo" checked>
+            <label for="none">Ninguno</label><br>
+            <input type="radio" name="promo" id="promo">
+            <label for="free">Transporte gratuito</label><br>
+            <input type="radio" name="promo" id="promo">
+            <label for="discount">Descuento 5%</label><br>
+            
+
+        </fieldset>
+        <br>

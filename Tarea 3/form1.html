@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <meta name="author" content="app web">
+    <meta name="keywords" content="html programacion web"
+    <meta name="aplication-name" content="Web-Udea">
+    <meta http-equiv="refresh" content="60">
+    
+</head>
+<body>
+    <h2>Rellena tu CV</h2>
+    <form action="/action_page.php" method="GET">
+
+        <label for="name">Nombre </label><input type="text" name="nombre" id="nombre"><br><br>
+        <label for="last_name">Apellidos </label><input type="text" name="last_name" id="last_name"><br><br>
+        <label for="pass">Contraseña </label><input type="password" name="pass" id="pass"><br><br>
+        <label for="DNI">DNI </label><input type="text" name="DNI" id="DNI" pattern="[0-9]" title="Numeric number"><br><br><br>
+        <label for="sex">Sexo </label><br>
+        <input type="radio" name="gender" id="men"><label for="men">Hombre</label><br>
+        <input type="radio" name="gender" id="women"><label for="women">Mujer</label><br><br>
+        <label for="photo">Incluir mi foto </label>
+        <input type="file" name="photo" id="photo" accept="image/*"><br><br>
+        <input type="checkbox" name="news" id="news"><label for="news">Suscribirme al boletin de novedades</label><br><br>
+        <input type="submit" name="save" id="save" value="Guardar cambios">
+        <input type="reset" name="reset" id="reset" value="Borrar los datos introducidos">
+
+    </form>
+</body>
+</html>

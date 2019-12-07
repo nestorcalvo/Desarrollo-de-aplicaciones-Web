@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <meta name="author" content="app web">
+    <meta name="keywords" content="html programacion web"
+    <meta name="aplication-name" content="Web-Udea">
+    <meta http-equiv="refresh" content="60">
+    
+</head>
+<body>
+    <h2>Formulario estructurado</h2>
+    <form action="/action_page.php" method="GET">
+        <fieldset name="personal_info" >
+            <legend>Datos personales</legend>
+            <label for="name">Nombre</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="last_name">Apellidos</label><br>
+            <input type="text" name="last_name" id="last_name"><br>
+            <label for="DNI">DNI</label><br>
+            <input type="text" name="DNI" id="DNI" pattern="[0-9]" title="Numbers only" size="10"><br>
+        </fieldset>
+        <br>
+        <fieldset name="conection_info">
+            <legend>Datos de conexión</legend>
+            <label for="username">Nombre de usuario</label><br>
+            <input type="text" name="username" id="username"><br>
+            <label for="pass">Contraseña</label><br>
+            <input type="password" name="password" id="password"><br>
+            <label for="pass_confirmation">Repite la contraseña</label><br>
+            <input type="password" name="pass_confirmation" id="pass_confirmation">
+
+
+        </fieldset>
+    </form>
